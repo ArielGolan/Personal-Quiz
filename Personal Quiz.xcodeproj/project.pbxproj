@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C613095D28A1591D00186A2E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C613095C28A1591D00186A2E /* Question.swift */; };
 		C65A3916289BEE450035D013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A3915289BEE450035D013 /* AppDelegate.swift */; };
 		C65A3918289BEE450035D013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A3917289BEE450035D013 /* SceneDelegate.swift */; };
-		C65A391A289BEE450035D013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A3919289BEE450035D013 /* ViewController.swift */; };
+		C65A391A289BEE450035D013 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A3919289BEE450035D013 /* QuestionsViewController.swift */; };
 		C65A391D289BEE450035D013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65A391B289BEE450035D013 /* Main.storyboard */; };
 		C65A391F289BEE490035D013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65A391E289BEE490035D013 /* Assets.xcassets */; };
 		C65A3922289BEE490035D013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65A3920289BEE490035D013 /* LaunchScreen.storyboard */; };
+		C6DBF82428A651EE007C430A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBF82328A651EE007C430A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C613095C28A1591D00186A2E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C65A3912289BEE450035D013 /* Personal Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65A3915289BEE450035D013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C65A3917289BEE450035D013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C65A3919289BEE450035D013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C65A3919289BEE450035D013 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		C65A391C289BEE450035D013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C65A391E289BEE490035D013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C65A3921289BEE490035D013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C65A3923289BEE490035D013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DBF82328A651EE007C430A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C613095B28A13A8A00186A2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C613095C28A1591D00186A2E /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C65A3909289BEE450035D013 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +68,49 @@
 		C65A3914289BEE450035D013 /* Personal Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				C65A3915289BEE450035D013 /* AppDelegate.swift */,
-				C65A3917289BEE450035D013 /* SceneDelegate.swift */,
-				C65A3919289BEE450035D013 /* ViewController.swift */,
-				C65A391B289BEE450035D013 /* Main.storyboard */,
-				C65A391E289BEE490035D013 /* Assets.xcassets */,
-				C65A3920289BEE490035D013 /* LaunchScreen.storyboard */,
-				C65A3923289BEE490035D013 /* Info.plist */,
+				C65A392A289BF20B0035D013 /* ViewControllers */,
+				C613095B28A13A8A00186A2E /* Models */,
+				C65A392B289BF21E0035D013 /* StoryBoards */,
+				C65A3929289BF1FB0035D013 /* App */,
+				C65A392C289BF2600035D013 /* Resurces */,
 			);
 			path = "Personal Quiz";
+			sourceTree = "<group>";
+		};
+		C65A3929289BF1FB0035D013 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C65A3915289BEE450035D013 /* AppDelegate.swift */,
+				C65A3917289BEE450035D013 /* SceneDelegate.swift */,
+				C65A3923289BEE490035D013 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C65A392A289BF20B0035D013 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C65A3919289BEE450035D013 /* QuestionsViewController.swift */,
+				C6DBF82328A651EE007C430A /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C65A392B289BF21E0035D013 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C65A391B289BEE450035D013 /* Main.storyboard */,
+				C65A3920289BEE490035D013 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C65A392C289BF2600035D013 /* Resurces */ = {
+			isa = PBXGroup;
+			children = (
+				C65A391E289BEE490035D013 /* Assets.xcassets */,
+			);
+			path = Resurces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65A391A289BEE450035D013 /* ViewController.swift in Sources */,
+				C6DBF82428A651EE007C430A /* ResultViewController.swift in Sources */,
+				C65A391A289BEE450035D013 /* QuestionsViewController.swift in Sources */,
+				C613095D28A1591D00186A2E /* Question.swift in Sources */,
 				C65A3916289BEE450035D013 /* AppDelegate.swift in Sources */,
 				C65A3918289BEE450035D013 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,10 +337,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MWA35DFF29;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Personal Quiz/Info.plist";
+				INFOPLIST_FILE = "Personal Quiz/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +366,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MWA35DFF29;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Personal Quiz/Info.plist";
+				INFOPLIST_FILE = "Personal Quiz/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
