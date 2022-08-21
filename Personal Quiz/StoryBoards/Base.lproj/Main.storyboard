@@ -333,7 +333,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="animalTypeLable" destination="DSv-0w-1zE" id="aYj-Ne-kBq"/>
-                        <outlet property="descriptionLable" destination="XAE-b5-9aP" id="XZt-xG-mfG"/>
+                        <outlet property="descriptionLable" destination="BOb-yC-x0O" id="pSX-Uf-oJZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dZ-4t-EcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
